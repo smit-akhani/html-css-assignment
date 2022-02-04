@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" cards="IE=edge">
+    <meta name="viewport" cards="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Bank Trend</title>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-blue top-nav">
+            <a class="navbar-brand" href="#"><img src="assets/finbank.PNG" width="40px" height="40px"><b>&nbsp; FINBANK</b></a>
+            <button class="navbar-toggler mr-2" onclick="showHideMenu()">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+
+        <nav class="navbar navbar-expand d-flex flex-column align-item-start" id="sidebar">
+            <a href="#" class="sidebar-top navbar-brand text-light mt-4">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <img src="./assets/finbank.PNG" alt="Logo image">
+                    <small class="text-light">welcome</small>
+                    <p class="text-white">FINBANK</p>
+                </div>
+            </a>
+            <ul class="navbar-nav d-flex flex-column mt-2 w-100">
+                <li class="nav-item w-100 d-flex align-items-center pl-2">
+                    <span><i class="fal fa-home-alt text-grey bg-red"></i></span><a href="#" class="nav-link text-grey pl-3"><small>Dashboard</small></a>
+                </li>
+                <li class="nav-item w-100 d-flex align-items-center pl-2 mt-2">
+                    <span><i class="far fa-exchange-alt text-grey"></i></span><a href="#" class="nav-link text-grey pl-3"><small>Transactions</small></a>
+                </li>
+                <li class="nav-item w-100 d-flex align-items-center pl-2 mt-2">
+                    <span><i class="far fa-credit-card-front text-grey"></i></span><a href="#" class="nav-link text-grey pl-3"><small>Cards</small></a>
+                </li>
+                <li class="nav-item w-100 d-flex align-items-center pl-2 mt-2">
+                    <span><i class="fal fa-badge-percent text-grey"></i></span><a href="#" class="nav-link text-grey pl-3"><small>Offers</small></a>
+                </li>
+                <li class="nav-item w-100 d-flex align-items-center pl-2 mt-2">
+                    <span><i class="fas fa-sack-dollar text-grey"></i></span><a href="#" class="nav-link text-grey pl-3"><small>Investments</small></a>
+                </li>
+            </ul>
+
+            <div class="sidebar-bottom text-light d-flex align-items-center">
+                <span><i class="fas fa-sign-out text-grey"></i></span><a href="#" class="nav-link text-grey pl-3"><small>Logout</small></a>
+            </div>
+
+        </nav>
+    </header>
+
+    <section class="cards-section">
+        <div class="container-fluid ml-0 pl-0">
+            <div class="row cards-header d-flex align-items-center pt-4">
+                <div class="col-lg-7 row">
+                    <div class="col-1 bg-white search-icon text-center">
+                        <span><i class="fas fa-search"></i></span>
+                    </div>
+                    <div class="col-10">
+                        <input class="search-bar" type="search" placeholder="Search" aria-label="Search">
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+                <div class="col-lg-5 d-flex align-items-center cards-header-right">
+                    <div class="d-flex align-items-center">
+                        <a class="nav-link" href="#">Feedback</a>
+                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#">Help</a>
+                        <a class="nav-link" href="#"><i class="fas fa-bell"></i></a>
+                        <a class="pt-1 nav-link" href="#"><img src="assets/user.jpg" class="user"></a>
+                      </div>
+                </div>
+            </div>
+
+            <div class="cards-body row mt-5">
+                <div class="col-xl-9  col-lg-8 cards-body-left borderRad20">
+                    <div class="row bg-white borderRad20">
+                        <div class="col-xl-6 col-lg-12 col-md-6 col-sm-12 mix-gradient">
+                            <img src="./assets/laptop.png" alt="" srcset="">
+                            <p class="py-5"><h1>&nbsp;</h1></p>
+                        </div>
+                        <div class="col-xl-6 col-lg-12 col-md-6 col-sm-12">
+                            <h3 class="text-blue pt-3 pl-4 thicker"><b>Live Life Confidentaly</b></h3>
+                            <p class="font-small12 pl-4 tagline">Chase your dreams and finish your plans by spending money in insurance</p>
+                            <p class="py-4 pl-4 text-white"><span class="button">Explore insurance</span></p>
+                        </div>
+                    </div><br><br>
+                    <div class="row">
+                        <br>
+                        <div class="row col-xl-4 col-sm-6 col-12">
+                            <section class="m-3 p-3 analyzed-section bg-white">
+                                <div class="d-flex justify-content-end align-items-center">
+                                    <p class="font-small12 text-dark-grey"><small>Monthly <i class="fas fa-caret-down analyzed-section-small-icon"></i></small></p>
+                                </div>
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-4">
+                                        <i class="fas fa-chart-pie-alt text-success pb-3"></i>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="d-flex flex-column">
+                                            <p class="text-dark-grey font-small14">Desposit</p>
+                                            <h5 class="py-2 text-dark-blue font-weight-bold">$58789.78</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div><br>
+                        <div class="row col-xl-4 col-sm-6 col-12">
+                            <section class="m-3 p-3 analyzed-section bg-white">
+                                <div class="d-flex justify-content-end align-items-center">
+                                    <p class="font-small12 text-dark-grey"><small>Monthly <i class="fas fa-caret-down analyzed-section-small-icon"></i></small></p>
+                                </div>
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-4">
+                                        <i class="fas fa-chart-pie-alt text-danger pb-3"></i>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="d-flex flex-column">
+                                            <p class="text-dark-grey font-small14">Withdrawl</p>
+                                            <h5 class="py-2 text-dark-blue font-weight-bold">$48780.78</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div><br>
+                        <div class="row col-xl-4 col-sm-6 col-12">
+                            <section class="m-3 p-3 analyzed-section bg-white">
+                                <div class="d-flex justify-content-end align-items-center">
+                                    <p class="font-small12 text-dark-grey"><small>Monthly <i class="fas fa-caret-down analyzed-section-small-icon"></i></small></p>
+                                </div>
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-4">
+                                        <i class="fas fa-chart-pie-alt text-dark-blue pb-3"></i>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="d-flex flex-column">
+                                            <p class="text-dark-grey font-small14">Desposit</p>
+                                            <h5 class="py-2 text-dark-blue font-weight-bold">$46344.78</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div><br><br>
+                    <div class="graph borderRad20 bg-white">
+                        <section class="p-3">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <p class="lead font-weight-bold text-muted">Cash Flow</p>
+                                </div>
+                                <div class="col-lg-6 d-flex align-items-center text">
+                                    <div class="d-flex align-items-center font-small14">
+                                        <span><i class="chart-icon fas fa-circle mr-1 pb-2 text-dark-blue"></i></i></span><a href="#" class="nav-link text-dark p-0 mr-3"><small>Received</small></a>
+                                        <span><i class="chart-icon fas fa-circle mr-1 pb-2 text-red"></i></i></span><a href="#" class="nav-link text-dark p-0 mr-3"><small>Spent</small></a>
+                                        <span><i class="chart-icon fas fa-circle mr-1 pb-2 text-grey"></i></i></span><a href="#" class="nav-link text-dark p-0 mr-3"><small>No Transactions</small></a>
+                                        <p class="borderWithShadow">Last Month&nbsp;<span><i class="chart-icon far fa-angle-down text-dark-blue"></i></span></p>
+                                      </div>
+                                </div>
+                            </div>
+                            <div>
+                                <canvas id="myChart" style="display: block; height: 250px;" width="1000" height="400" class="chartjs-render-monitor mt-4"></canvas>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 cards-body-right bg-white borderRad20">
+                    <div class="row">
+                        <div class="col-lg-12 card-section">
+                            <br>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="text-dark-grey"><small class="pl-4">My Card</small></p>
+                                <p><i class="fal fa-plus text-white mr-4"></i></p>
+                            </div>
+                            <br>
+                            <div class="card-bg row">
+                                <div class="col-2"></div>
+                                <div class="col-8"></div>
+                                <div class="col-2"></div>
+                            </div>
+                            <div class="row visa-card">
+                                <div class="col-1"></div>
+                                <div class="col-10">
+                                    <div class="row">
+                                        <div class="visa-card-icon">
+                                            <p><small><i class="fas fa-caret-down text-white"></i></small></p>
+                                        </div>
+                                        <div class="col-1"></div>
+                                        <div class="col-10">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <p><small><i class="far fa-check bg-success text-white mt-3"></i></small></p>
+                                                <p class="text-white mt-3">VISA</p>
+                                            </div>
+                                            <div>
+                                                <p class="text-white py-3">**** &nbsp; **** &nbsp; **** &nbsp <small>1234</small></p>
+                                            </div>
+                                            <div class="row font-small12 text-grey">
+                                                <div class="col-6">
+                                                    <p><small>AVAILABLE FUNDS</small></p>
+                                                    <p><small>1,23,456 $</small></p>
+                                                </div>
+                                                <div class="col-3">
+                                                    <p><small>EXPIRED</small></p>
+                                                    <p><small>08/22</small></p>
+                                                </div>
+                                                <div class="col-3">
+                                                    <p><small>CVV</small></p>
+                                                    <p class="mb-3"><small>186</small></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-1"></div>
+                                    </div>
+                                </div>
+                                <div class="col-1"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <br><br>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="text-dark-grey"><small class="pl-4">Latest Transactions</small></p>
+                                <p><i class="fas fa-arrow-right text-white mr-4"></i></p>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-1"></div>
+                                <div class="col-10">
+                                    <div class="row d-flex align-items-center">
+                                        <div class="col-lg-3 col-md-2 col-sm-3 col-3">
+                                            <p class="pb-4"><i class="far fa-shopping-basket trans-icon"></i></p>
+                                        </div>
+                                        <div class="col-lg-6 col-md-8 col-sm-6 col-6">
+                                            <p class="text-blue font-small14">Supreme Shirt</p>
+                                            <p class="font-small12 text-dark-grey pb-4">11 Nov, 2020 11:00 pm</p>
+                                        </div>
+                                        <div class="col-lg-3 col-md-2 col-sm-3 col-3">
+                                            <div class="row">
+                                                <div class="col-10">
+                                                    <p class="font-small12 text-red font-weight-bold pb-4">-15.00 $</p>
+                                                </div>
+                                                <div class="col-2">
+                                                    <p class=""><i class="far fa-angle-right text-dark-grey bg-white"></i></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row d-flex align-items-center">
+                                        <div class="col-lg-3 col-md-2 col-3">
+                                            <p class="pb-4"><i class="fab fa-cc-visa trans-icon"></i></i></p>
+                                        </div>
+                                        <div class="col-lg-6 col-md-8 col-6">
+                                            <p class="text-blue font-small14">Salary</p>
+                                            <p class="font-small12 text-dark-grey pb-4">05 Nov, 2020 11:00 pm</p>
+                                        </div>
+                                        <div class="col-lg-3 col-md-2 col-3">
+                                            <div class="row">
+                                                <div class="col-10">
+                                                    <p class="font-small12 text-success font-weight-bold pb-4">+249.59 $</p>
+                                                </div>
+                                                <div class="col-2">
+                                                    <p class=""><i class="far fa-angle-right text-dark-grey bg-white"></i></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row d-flex align-items-center">
+                                        <div class="col-lg-3 col-md-2 col-3">
+                                            <p class="pb-4"><i class="fal fa-pills trans-icon"></i></p>
+                                        </div>
+                                        <div class="col-lg-6 col-md-8 col-6">
+                                            <p class="text-blue font-small14">Medical Checkup</p>
+                                            <p class="font-small12 text-dark-grey pb-4">04 Nov, 2020 11:00 pm</p>
+                                        </div>
+                                        <div class="col-lg-3 col-md-2 col-3">
+                                            <div class="row">
+                                                <div class="col-10">
+                                                    <p class="font-small12 text-red font-weight-bold pb-4">-39.50 $</p>
+                                                </div>
+                                                <div class="col-2">
+                                                    <p class=""><i class="far fa-angle-right text-dark-grey bg-white"></i></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row d-flex align-items-center">
+                                        <div class="col-lg-3 col-md-2 col-3">
+                                            <p class="pb-4"><i class="far fa-pizza trans-icon"></i></p>
+                                        </div>
+                                        <div class="col-lg-6 col-md-8 col-6">
+                                            <p class="text-blue font-small14">Pizzahot</p>
+                                            <p class="font-small12 text-dark-grey pb-4">03 Nov, 2020 11:00 pm</p>
+                                        </div>
+                                        <div class="col-lg-3 col-md-2 col-3">
+                                            <div class="row">
+                                                <div class="col-10">
+                                                    <p class="font-small12 text-red font-weight-bold pb-4">-6.00 $</p>
+                                                </div>
+                                                <div class="col-2">
+                                                    <p class=""><i class="far fa-angle-right text-dark-grey bg-white"></i></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row d-flex align-items-center">
+                                        <div class="col-lg-3 col-md-2 col-3">
+                                            <p class="pb-4"><i class="far fa-shopping-basket trans-icon"></i></p>
+                                        </div>
+                                        <div class="col-lg-6 col-md-8 col-6">
+                                            <p class="text-blue font-small14">Supreme Shirt</p>
+                                            <p class="font-small12 text-dark-grey pb-4">03 Nov, 2020 10:00 pm</p>
+                                        </div>
+                                        <div class="col-lg-3 col-md-2 col-3">
+                                            <div class="row">
+                                                <div class="col-10">
+                                                    <p class="font-small12 text-red font-weight-bold pb-4">-15.00 $</p>
+                                                </div>
+                                                <div class="col-2">
+                                                    <p class=""><i class="far fa-angle-right text-dark-grey bg-white"></i></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row d-flex align-items-center">
+                                        <div class="col-lg-3 col-md-2 col-3">
+                                            <p class="pb-4"><i class="fab fa-cc-visa trans-icon"></i></i></p>
+                                        </div>
+                                        <div class="col-lg-6 col-md-8 col-6">
+                                            <p class="text-blue font-small14">CapitalOne</p>
+                                            <p class="font-small12 text-dark-grey pb-4">02 Nov, 2020 11:00 pm</p>
+                                        </div>
+                                        <div class="col-lg-3 col-md-2 col-3">
+                                            <div class="row">
+                                                <div class="col-10">
+                                                    <p class="font-small12 text-success font-weight-bold pb-4">+130.00 $</p>
+                                                </div>
+                                                <div class="col-2">
+                                                    <p class=""><i class="far fa-angle-right text-dark-grey bg-white"></i></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-1"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+        </div>   
+    </section>
+</body>
+
+<script>
+    var sidebar = document.getElementById("sidebar");
+    sidebar.classList.add("hidesidebar");
+
+    function showHideMenu(){
+        if(sidebar.className === "navbar navbar-expand d-flex flex-column align-item-start showsidebar"){
+            sidebar.classList.remove("showsidebar");
+            sidebar.classList.add("hidesidebar");
+        }
+        else{
+            sidebar.classList.remove("hidesidebar")
+            sidebar.classList.add("showsidebar");
+        }
+    }
+    var ctx = document.getElementById("myChart").getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21 , 22, 23, 24, 25, 26, 27, 28, 29, 30, 31],
+            datasets: [
+                {
+                    label: 'Received',
+                    data: [2200, 900, 4800, 1225, 250, 1200, 0, 0, 0, 0, 0, 0, 0, 2000, 0, 0, 0, 0, 890, 210, 2200, 3300, 800, 750, 3600, 0, 1800, 0, 0, 2800, 0],
+                    backgroundColor: "#172B9F",
+                    borderWidth: 1,
+                },
+                {
+                    label: "Spent",
+                    data: [3000, 1420, 3250, 110, 890, 3680, 0, 0, 560, 0, 0, 0, 0, 1878, 0, 0, 0, 0, 1872, 520, 2874, 2054, 1025, 3341, 3548, 0, 0, 0, 0, 4210, 420],
+                    backgroundColor: "#F42879",
+                    borderWidth: 1,
+                },
+                {
+                    label: "No Transaction",
+                    data: [0, 0, 0, 0, 0, 0, 5000, 5000, 0, 5000, 5000, 5000, 5000, 0, 5000, 5000, 5000, 5000, 0, 0, 0, 0, 0, 0, 0, 5000, 0, 5000, 5000, 0, 0],
+                    backgroundColor: "#E2E3F0",
+                    borderWidth: 1,
+                }
+            ]
+        },
+        options: {
+            scales: {
+                yAxes: [
+                    {
+                            ticks: {
+                                beginAtZero: true,
+                        }
+                    }
+                ]
+            },
+            legend: {
+                display: false,
+            },
+        }
+    });
+
+</script>
+
+</html>
